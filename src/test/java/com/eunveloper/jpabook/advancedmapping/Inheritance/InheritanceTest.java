@@ -52,7 +52,7 @@ public class InheritanceTest {
         System.out.println("Hibernate 가 항상 EAGER 전략을 사용하기 때문 -> 즉시 조회하기 때문");
         System.out.println("https://sodocumentation.net/hibernate/topic/2326/performance-tuning");
         System.out.println("");
-        System.out.println("======================== 임시?방안 ========================");
+        System.out.println("======================== 임시방안 ========================");
         System.out.println();
         System.out.println("원하는 테이블의 정보만 가져오는 DTO와 JPQL을 활용하면 데이터를 조회!");
         System.out.println();
@@ -96,7 +96,7 @@ public class InheritanceTest {
         subAlbumRepository.findByName(name);
         System.out.println("======================== 확인사항 ========================");
         System.out.println();
-        System.out.println("부모클래스를 조회하게 되면 자시글래스 전부를 union all 쿼리로 조회");
+        System.out.println("부모클래스를 조회하게 되면 자식클래스 전부를 union all 쿼리로 조회");
         System.out.println("싱황에 따라 다르겠지만 불필요한 데이터 조회 + 성능문제를 야기할 수 있음");
 
         System.out.println("======================== 2. 생성 =======================");
